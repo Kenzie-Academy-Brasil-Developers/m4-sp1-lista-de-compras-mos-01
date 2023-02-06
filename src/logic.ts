@@ -60,7 +60,7 @@ export const updateProduct = (
       .json({ message: `The element ${name} not found` });
   }
 
-  return response.status(200).json(product[request.findListIndex]);
+  return response.status(200).json(product[request.findListIndex].data[0]);
 };
 
 export const deleteList = (
